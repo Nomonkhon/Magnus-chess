@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Игра против Магнуса</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <img src="magnus.jpg" alt="Magnus Carlsen" id="magnus-img">
+    <button id="start-btn">Пуск</button>
+  </div>
+
+  <div id="difficulty-screen" class="hidden">
+    <button class="level-btn" data-level="easy">Легко</button>
+    <button class="level-btn" data-level="medium">Средне</button>
+    <button class="level-btn" data-level="hard">Сложно</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <div id="timer">
+      <span id="user-time">10:00</span> - <span id="ai-time">10:00</span>
+    </div>
+    <div id="board"></div>
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.css">
+  <script src="main.js"></script>
+</body>
+</html>
