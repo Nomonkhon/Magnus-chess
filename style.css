@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+#start-screen, #difficulty-screen, #game-screen {
+  margin-top: 50px;
+}
+
+#magnus-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+#board {
+  width: 400px;
+  margin: 20px auto;
+}
+
+#result {
+  font-size: 24px;
+  margin-top: 20px;
+}
