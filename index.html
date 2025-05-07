@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <title>Magnus Chess</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
 </head>
 <body>
   <div class="start-screen" id="startScreen">
     <img src="magnus.jpg" alt="Magnus Carlsen" class="background-img" />
-    <button onclick="showDifficulty()" class="start-button">Пуск</button>
+    <button onclick="showDifficulty()" class="start-button">Начать</button>
   </div>
 
   <div class="difficulty-screen" id="difficultyScreen">
@@ -23,9 +24,11 @@
 
   <div id="game">
     <div id="timer">10:00</div>
-    <div id="board"></div>
+    <div id="board" class="board"></div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
