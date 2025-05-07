@@ -1,11 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Magnus Chess</title>
+
+  <!-- Chessboard CSS -->
+  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <div class="start-screen" id="startScreen">
@@ -25,11 +30,19 @@
 
   <div id="game">
     <div id="timer">10:00</div>
-    <div id="board" class="board"></div>
+    <div id="board" class="board" style="width: 400px"></div>
   </div>
 
+  <!-- Chessboard JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
   <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
   <script src="main.js"></script>
+
+  <!-- Shaxmat taxtasini ishga tushurish -->
+  <script>
+    var board = Chessboard('board', {
+      position: 'start'
+    });
+  </script>
 </body>
 </html>
