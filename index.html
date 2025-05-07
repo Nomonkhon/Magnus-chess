@@ -12,13 +12,16 @@
     <button onclick="showDifficulty()" class="start-button">Пуск</button>
   </div>
 
-  <div class="difficulty-screen" id="difficultyScreen" style="display:none;">
-    <button onclick="startGame('easy')">Легко</button>
-    <button onclick="startGame('medium')">Средне</button>
-    <button onclick="startGame('hard')">Сложно</button>
+  <div class="difficulty-screen" id="difficultyScreen">
+    <img src="level.jpg" alt="Level Background" class="background-img" />
+    <div class="difficulty-buttons">
+      <button onclick="startGame('hard')" class="difficulty-button">Сложный</button>
+      <button onclick="startGame('medium')" class="difficulty-button">Средний</button>
+      <button onclick="startGame('easy')" class="difficulty-button">Лёгкий</button>
+    </div>
   </div>
 
-  <div id="game" style="display:none;">
+  <div id="game">
     <div id="timer">10:00</div>
     <div id="board"></div>
   </div>

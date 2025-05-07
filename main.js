@@ -8,7 +8,7 @@ function startGame(level) {
   document.getElementById("difficultyScreen").style.display = "none";
   document.getElementById("game").style.display = "block";
   startTimer();
-  document.getElementById("board").innerHTML = "<p>Шахматная доска будет здесь (" + level + ")</p>";
+  document.getElementById("board").innerHTML = "<p>Здесь будет шахматная доска (" + level + ")</p>";
 }
 
 function startTimer() {
